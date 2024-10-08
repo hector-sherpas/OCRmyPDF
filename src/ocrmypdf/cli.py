@@ -255,7 +255,7 @@ Online documentation is located at:
         help=argparse.SUPPRESS,
     )
     jobcontrol.add_argument(
-        '--use-threads', action='store_true', default=True, help=argparse.SUPPRESS
+        '--use-threads', action='store_false', default=False, help=argparse.SUPPRESS
     )
     jobcontrol.add_argument(
         '--no-use-threads',
