@@ -782,10 +782,10 @@ def _pdf_pageinfo_concurrent(
     total = len(pdf.pages)
 
     n_workers = min(1 + len(pages) // 4, max_workers)
-    if n_workers == 1:
+    #if n_workers == 1:
         # If we decided on only one worker, there is no point in using
         # a separate process.
-        use_threads = True
+        #use_threads = True
 
     if use_threads and n_workers > 1:
         # If we are using threads, there is no point in using more than one
